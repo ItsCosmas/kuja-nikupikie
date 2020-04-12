@@ -1,0 +1,26 @@
+.food {
+	background-color: orangered;
+	min-height: 80vh;
+
+	&__figure {
+		// flex: 0 0 50%;
+		height: 30rem;
+	}
+
+	&__img {
+		// width: 100%;
+		// height: auto;
+		height: 100%;
+		width: auto;
+	}
+}
+
+.flex {
+	&__column {
+		display: flex;
+		flex-direction: column;
+	}
+	&__row {
+		display: flex;
+	}
+}

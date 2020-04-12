@@ -1,0 +1,77 @@
+@import '../../scss/mixins';
+.filter {
+	display: flex;
+	flex-direction: column;
+
+	position: sticky;
+	&__nav {
+		height: 10rem;
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+
+		padding: 2rem;
+
+		&--list {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			height: 100%;
+
+			line-height: 2;
+			font-size: 1.6rem;
+			list-style-type: none;
+
+			& > * {
+				padding: 0rem 1rem;
+
+				@include respond(tablet) {
+					&:first-child {
+						padding: 0rem;
+						padding-right: 1rem;
+					}
+				}
+			}
+		}
+
+		&--item {
+			display: inline-block;
+			text-align: center;
+			text-transform: capitalize;
+		}
+	}
+
+	&__action {
+		height: 10rem;
+		background: #fff;
+
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		padding: 2rem;
+
+		&--group {
+			flex: 0 0 30%;
+			display: flex;
+			// align-items: center;
+			flex-direction: column;
+			justify-content: center;
+
+			& > * {
+				min-width: 100%;
+			}
+		}
+
+		&--wrapper {
+			display: flex;
+			align-items: center;
+
+			& > *:not(:first-child) {
+				margin-left: 2rem;
+			}
+		}
+	}
+}

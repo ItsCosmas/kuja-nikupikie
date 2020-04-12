@@ -1,0 +1,36 @@
+.card {
+	display: flex;
+	flex-direction: column;
+
+	justify-content: flex-start;
+
+	padding: 1rem 2rem;
+	background: var(--color-white);
+
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+	&__figure {
+		height: 22rem;
+		text-align: center;
+		padding: 1rem 0;
+	}
+	&__img {
+		height: 100%;
+		width: auto;
+	}
+	&__action {
+		&--item {
+			font-size: 1.4rem;
+			display: inline-flex;
+			font-size: 1.6rem;
+			align-items: center;
+		}
+		&--icon {
+			width: 1.6rem;
+			height: 1.4rem;
+			fill: currentColor;
+
+			margin-right: 1rem;
+		}
+	}
+}
