@@ -2,17 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './scss/index.scss';
-import Routes from './Routes';
+import AppRoutes from './AppRoutes';
 
-import { Provider } from 'react-redux';
+// import { Provider } from 'react-redux';
 import store from './redux/store';
 
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-	<Provider store={store}>
-		<Routes />
-	</Provider>,
+	// <Provider store={store}>
+	<AppRoutes />,
+	// </Provider>,
 	document.getElementById('root')
 );
 

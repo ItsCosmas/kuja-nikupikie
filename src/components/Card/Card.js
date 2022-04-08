@@ -11,7 +11,7 @@ import default_thumbnail from '../../assets/img/food.jpg';
 function Card() {
 	return (
 		<div className='card'>
-			<Link className='text--link'>
+			<Link to={'#'} className='text--link'>
 				<figure className='card__figure'>
 					<img
 						className='card__img'

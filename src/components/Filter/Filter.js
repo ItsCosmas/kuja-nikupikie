@@ -80,9 +80,7 @@ function Filter() {
 							to='/random'
 							onClick={handleFilterAction}>
 							<svg className='btn--icon-shape'>
-								<use
-									xlinkHref={`${sprite}#${'icon-filter_list'}`}
-								/>
+								<use xlinkHref={`${sprite}#${'icon-filter_list'}`} />
 							</svg>
 							<span>Filter</span>
 						</button>
